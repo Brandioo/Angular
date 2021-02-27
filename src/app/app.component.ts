@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'myApp';
+  myName= 'SDA';
+  userName='';
+  password='';
+
+  clickHandler(){
+    console.log(this.userName,this.password)
+  }
 }

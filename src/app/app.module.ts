@@ -3,14 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TodolistComponent } from './components/todolist/todolist.component';
+import {FormsModule} from "@angular/forms";
+import { ListItemComponent } from './components/list-item/list-item.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TodolistComponent,
+    ListItemComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
