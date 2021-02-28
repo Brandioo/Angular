@@ -1,0 +1,19 @@
+<p>My To Do List</p>
+<!--<div *ngIf="students.length"> Visible </div>-->
+<!--<div *ngFor="let s of students">-->
+<!--  {{s}}-->
+
+<!--<div *ngFor="let item of toDoItems">-->
+<!--  {{item}}-->
+<!--</div>-->
+
+<div>
+  <ol>
+    <app-list-item  [item]="i" *ngFor="let i of items">
+    </app-list-item>
+  </ol>
+</div>
+
+<input [(ngModel)]="newItem">
+<button (click)="addItem()">Add Item</button>
+
